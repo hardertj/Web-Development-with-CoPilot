@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        padding: 1em 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 1em;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    main {
+        padding: 2em;
+    }
+
+    section {
+        margin-bottom: 2em;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    #projects img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #projects .card {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 1em;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        flex: 1 1 calc(50% - 1em);
+        box-sizing: border-box;
+    }
+
+    .form-group {
+        margin-bottom: 1em;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 0.5em;
+        box-sizing: border-box;
+    }
+
+    button {
+        padding: 0.75em 1.5em;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #555;
+    }
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a basic HTML structure for Module 5.">
+    <title>Module 5</title>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <h1>Welcome to Module 5</h1>
+        <p>This is a basic HTML structure.</p>
+        <section id="home" role="region" aria-labelledby="home-heading">
+            <h2 id="home-heading">Home</h2>
+            <p>This is the home section.</p>
+        </section>
+        <section id="about-me" role="region" aria-labelledby="about-me-heading">
+            <h2 id="about-me-heading">About Me</h2>
+            <p>This is the about me section.</p>
+        </section>
+        <section id="projects" role="region" aria-labelledby="projects-heading">
+            <h2 id="projects-heading" style="flex-basis: 100%;">Projects</h2>
+            <div class="card">
+                <img src="path/to/your/image1.jpg" alt="Description of the image 1">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="card">
+                <img src="path/to/your/image2.jpg" alt="Description of the image 2">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+            </div>
+            <div class="card">
+                <img src="path/to/your/image3.jpg" alt="Description of the image 3">
+                <h3>Project 3</h3>
+                <p>Description of project 3.</p>
+            </div>
+            <div class="card">
+                <img src="path/to/your/image4.jpg" alt="Description of the image 4">
+                <h3>Project 4</h3>
+                <p>Description of project 4.</p>
+            </div>
+        </section>
+        <section id="skills" role="region" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <p>This is the skills section.</p>
+            <ul>
+                <li><img src="path/to/icon1.png" alt="Icon 1"> Skill 1</li>
+                <li><img src="path/to/icon2.png" alt="Icon 2"> Skill 2</li>
+                <li><img src="path/to/icon3.png" alt="Icon 3"> Skill 3</li>
+                <li><img src="path/to/icon4.png" alt="Icon 4"> Skill 4</li>
+            </ul>
+        </section>
+        <section id="contact" role="region" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <p>This is the contact section.</p>
+            <form action="/submit-form" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
