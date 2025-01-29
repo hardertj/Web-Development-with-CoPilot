@@ -10,70 +10,6 @@
     <script src="script.js"></script>
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        /* The Modal (background) */
-        .modal {
-            display: none; 
-            position: fixed; 
-            z-index: 1; 
-            padding-top: 60px; 
-            left: 0;
-            top: 0;
-            width: 100%; 
-            height: 100%; 
-            overflow: auto; 
-            background-color: rgb(0,0,0); 
-            background-color: rgba(0,0,0,0.9); 
-        }
-    
-        /* Modal Content (image) */
-        .modal-content {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-        }
-    
-        /* Caption of Modal Image */
-        #caption {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-            text-align: center;
-            color: #ccc;
-            padding: 10px 0;
-        }
-    
-        /* Add Animation */
-        .modal-content, #caption { 
-            animation-name: zoom;
-            animation-duration: 0.6s;
-        }
-    
-        @keyframes zoom {
-            from {transform:scale(0)} 
-            to {transform:scale(1)}
-        }
-    
-        /* The Close Button */
-        .close {
-            position: absolute;
-            top: 15px;
-            right: 35px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-    
-        .close:hover,
-        .close:focus {
-            color: #bbb;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        </style>
     </head>
     <body>
     <header role="banner">
@@ -177,31 +113,6 @@
             <img class="modal-content" id="img01">
             <div id="caption"></div>
         </div>
-        <!-- <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-
-            // Get all images in the projects section and insert them inside the modal - use their "alt" text as a caption
-            var images = document.querySelectorAll("#projects img");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-
-            images.forEach(function(img) {
-                img.onclick = function() {
-                    modal.style.display = "block";
-                    modalImg.src = this.src;
-                    captionText.innerHTML = this.alt;
-                }
-            });
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-                modal.style.display = "none";
-            }
-        </script> -->
     
         <footer role="contentinfo"></footer>
             <p>&copy; 2023 Your Name. All rights reserved.</p>
